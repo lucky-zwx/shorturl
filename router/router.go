@@ -17,7 +17,7 @@ var re_client, err = RedisInit("127.0.0.1:6379")
 func RedisInit(addr string) (*redis.Client, error) {
 	redisdb := redis.NewClient(&redis.Options{
 		Addr:     addr,
-		Password: "abk6745741",
+		Password: "",
 		DB:       0,
 		PoolSize: 10,
 	})
